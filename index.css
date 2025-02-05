@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Liter&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    .kanit-regular {
+        font-family: "Kanit", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      
+         
+}
+
+body 
+{
+    background-color: rgb(240, 240, 240); /* สีขาวอมเทา */
+}
+
+nav
+{
+    width: 100%;
+    height: 7vw;
+    border-radius:60px;
+    background-image: linear-gradient(to right top, #ff8c5d, #f9804f, #f37441, #ed6833, #e65c24, #e95128, #ec442d, #ef3433, #f91f4c, #ff0065, #ff007f, #ff009b);
+}
+
+.nav-container
+{
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+.shopname
+{
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 72vw;
+}
+
+
+
+
+.logonav
+{
+    width: 4vw;
+    object-fit: contain;
+    height: 106px;
+  
+}
+
+.nav-profile
+{
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-profile-name
+{
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 20px;
+
+}
+
+.fa-cart-shopping
+{
+    font-size: 2vw;
+    color: white;
+}
+
+.nav-profile-cart
+{
+    position: relative;
+}
+
+.cart-count
+{
+    position: absolute;
+    top: -15px;
+    left: 21px;
+    width: 25px;
+    height: 25px;
+    background: rgb(75, 254, 179);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 90vw;
+    
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.sidebar
+{
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+.product
+{
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+
+}
+
+.sidebar-search
+{
+    padding: 10px;
+    border: 2px solid transparent;
+    width: 100%;
+    font-size: 1.2vw;
+    outline: none;
+    border-radius: 5px;
+    background: #e1e1e1;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.sidebar-search:focus
+{
+    border: 2px solid red;
+}
+
+.sidebar-items
+{
+    
+    background: #e1e1e1;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    color: black;
+    transition: 0.3s;
+    font-size: 1.2vw;
+
+
+}
+
+.sidebar-items:hover
+{
+    background: #ffdc96;
+    color: white;
+    
+}
+
+.pruduct-items
+{
+    width: 220px;
+    margin-left: 20px;
+    height: 270px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.pruduct-items:hover
+{
+    transform: scale(1.05);
+}
+
+
+.img
+{
+    height:  220px;
+    background: #880e4f;
+
+}
+
+
+.product-img
+{
+    width: 100%;
+    height:220px ;
+    object-fit: cover;
+
+}
+
+
+.font-tea
+{
+    font-size: 1.2vw;
+    text-align: center;
+
+}
+
+.font-teaprice
+{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+
+.modal
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal-page
+{
+    min-width: 30vw;
+    max-width: 50vw;
+    max-height: 60vw;
+    overflow: scroll;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;    
+}
+
+
+.modaldesc-content
+{
+  
+    display: flex;
+}
+
+.modaldsc-detail
+{
+    
+    margin-left: 20px;
+}
+
+.modaldesc-img
+{
+    width: 20vw;
+    height:20vw ;
+    object-fit: cover;
+    border-radius: 10px;
+
+    
+    
+}
+
+.btn-control
+{
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5vw;
+
+}
+
+.btn
+{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: 0.3s;
+
+
+}
+
+.btn-buy
+{
+    background: linear-gradient(125deg, #2ecc71, #27ae60, #1abc9c);
+    color: white;
+    margin-left: 20px;
+}
+
+
+.cartlist
+{
+    
+}
+
+.cartlist-items
+{
+    width: 40vw;
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartlist-left
+{
+    
+    display: flex;
+  
+}
+
+.cartlist-left img
+{
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+
+.cartlist-right
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.btnc{
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.product-page
+{
+  min-width: 30vw;
+  max-width: 60vw;
+  min-height: 30vw;
+  max-height: 60vw;
+  overflow: scroll;
+  background-color: rgb(247, 247, 247);
+  border-radius: 15px;
+  padding: 20px;
+  
+}
+
+.product-content
+{
+  
+  display: flex;
+}
+
+.product-choice
+{
+   
+    margin-left: 25px;
+   
+    
+   
+
+}
+
+.product-type
+{
+   width: 20vw;
+   height: 8vw;
+   border-radius: 15px;
+   background: #ffffff;
+   padding: 10px;
+   margin-top: 10px;
+   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+   display: flex;
+
+
+}
+
+
+
+.sweetless
+{
+   width: 4.5vw;
+   height: 2vw;
+   background: #5e5d5c;
+   border-radius: 10px;
+   margin-top: 4vw;
+   margin-left: 0.5vw;
+   padding: 1vw;
+}
+
+.normalsweet
+{
+   width: 4.5vw;
+   height: 2vw;
+   background: #5e5d5c;
+   border-radius: 10px;
+   margin-top: 4vw;
+   margin-left: 2vw;
+}
+
+.highsweet
+{
+   width: 4.5vw;
+   height: 2vw;
+   background: #5e5d5c;
+   border-radius: 10px;
+   margin-top: 4vw;
+   margin-left: 2vw;
+}
+
+
+
+
+
+
+
+
+.product-sweetness
+{
+    width: 20vw;
+    height: 8vw;
+    border-radius: 15px;
+    padding: 10px;
+    background: #ffffff;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    display: flex;
+
+}
+
+.modalproduuct-img
+{
+    width: 15vw;
+    height: 22vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
